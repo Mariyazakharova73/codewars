@@ -115,3 +115,12 @@ function sum() {
   }
   return result;
 }
+
+// Ghostbusters (whitespace removal)
+function ghostBusters(building) {
+  if (building.includes(' ')) {
+    return building.replace(/ /gi, '');
+  } else {
+    return "You just wanted my autograph didn't you?";
+  }
+}
