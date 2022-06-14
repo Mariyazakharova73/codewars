@@ -124,3 +124,18 @@ function ghostBusters(building) {
     return "You just wanted my autograph didn't you?";
   }
 }
+
+// Length and two values.
+function alternate(n, firstValue, secondValue) {
+  let arr = [];
+  for (let i = 0; i < n / 2; i++) {
+    arr.push(firstValue);
+    arr.push(secondValue);
+  }
+  if (!(n % 2 === 0)) {
+    arr.pop();
+    return arr;
+  } else {
+    return arr;
+  }
+}
