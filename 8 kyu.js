@@ -113,3 +113,10 @@ function doubleInteger(i) {
   let doble = i * 2;
   return doble;
 }
+
+//Do something "n.times" (Simplifying "for" loops)
+Number.prototype.times = function (f) {
+  for (let i = 0; i < this; i++) {
+    f(i);
+  }
+};
