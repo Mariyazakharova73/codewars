@@ -34,3 +34,11 @@ function arrayDiff(a, b) {
   let dif = a.filter((i) => !b.includes(i));
   return dif;
 }
+
+//Where is my parent!?(cry)
+function findChildren(dancingBrigade) {
+  return dancingBrigade
+    .split('')
+    .sort((a, b) => a.localeCompare(b, 'en', { caseFirst: 'upper' }))
+    .join('');
+}
