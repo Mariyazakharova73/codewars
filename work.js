@@ -31,3 +31,53 @@
 //   }
 //   console.log(arr3);
 // }
+
+const arr1 = [1, 2, 2, 3]
+const arr2 = [3, 3, 2, 1];
+// const arr1 = [1, 2, 3, 4];
+// const arr2 = [1, 2, 3, '4'];
+
+// if (a.length !== b.length) {
+//   console.log(false);
+// } else {
+//   for (var i = 0; i < a.length; i++) {
+//     if (typeof a[i] !== typeof b[i]) {
+//       console.log(false);
+//     } else if (b.includes(a[i])) {
+//       console.log(true);
+//     }
+// }
+// }
+
+// if (arr1.length !== arr2.length) {
+//   console.log(false);
+// } else {
+//   for (var i = 0; i < arr1.length; i++) {
+//     if (typeof arr1[i] !== typeof arr2[i]) {
+//       console.log(false);
+//     } else {
+//       if (arr2.includes(arr1[i])) {
+//         console.log(true);
+//       }
+//     }
+//   }
+// }
+
+// if (arr1.length !== arr2.length) {
+//   console.log(false);
+// } else {
+//   let res = [];
+//   for (var i = 0; i < arr1.length; i++) {
+//     if (typeof arr1[i] === typeof arr2[i] && arr1.sort().every(function(value, index) { return value === arr2.sort()[index]})) {
+//       res.push('true');
+//     } else {
+//       res.push('false');
+//     }
+//   }
+//   console.log(res);
+//   if (res.includes('false')) {
+//     console.log(false);
+//   } else {
+//     console.log(true);
+//   }
+// }

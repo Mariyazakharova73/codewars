@@ -63,3 +63,29 @@ function getConsectiveItems(items, key) {
   }
   return imax;
 }
+
+//Arrays Similar
+function arraysSimilar(arr1, arr2) {
+  if (arr1.length !== arr2.length) {
+    return false;
+  } else {
+    let res = [];
+    for (var i = 0; i < arr1.length; i++) {
+      if (
+        typeof arr1[i] === typeof arr2[i] &&
+        arr1.sort().every(function (value, index) {
+          return value === arr2.sort()[index];
+        })
+      ) {
+        res.push('true');
+      } else {
+        res.push('false');
+      }
+    }
+    if (res.includes('false')) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+}
