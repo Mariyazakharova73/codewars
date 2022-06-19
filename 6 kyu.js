@@ -28,3 +28,9 @@ function numberOfPairs(gloves) {
   });
   return result;
 }
+
+//Array.diff
+function arrayDiff(a, b) {
+  let dif = a.filter((i) => !b.includes(i));
+  return dif;
+}
