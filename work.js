@@ -31,31 +31,3 @@
 //   }
 //   console.log(arr3);
 // }
-
-// "BbbEeee"
-let dancingBrigade = 'beeeEBb';
-let arr = dancingBrigade.split('');
-// let arr2 = arr.sort(function (a, b) {
-//   return b.localeCompare(a);
-// });
-// let str = arr2.join('')
-// console.log(str);
-// bbBeeeE
-
-// console.log(dancingBrigade.split('').sort().join(''));
-// BEbbeee
-
-// let sort = arr.sort(function (a, b) {
-//   console.log(( a + " - " + b ));
-//   if (a < b) {
-//     return -1;
-//   }
-//   if (a.toLowerCase() === b.toLowerCase()) {
-//     return -1;
-//   }
-//   if (a > b) {
-//     return 1;
-//   }
-//   return 0;
-// });
-// console.log(arr);

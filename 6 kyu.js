@@ -42,3 +42,24 @@ function findChildren(dancingBrigade) {
     .sort((a, b) => a.localeCompare(b, 'en', { caseFirst: 'upper' }))
     .join('');
 }
+
+//Consecutive Count
+function getConsectiveItems(items, key) {
+  let imax = 0;
+  let ilenght = 0;
+  let str = String(items);
+  str.split('').forEach(function (item) {
+    if (item === String(key)) {
+      ilenght += 1;
+    } else {
+      if (ilenght > imax) {
+        imax = ilenght;
+      }
+      ilenght = 0;
+    }
+  });
+  if (ilenght > imax) {
+    imax = ilenght;
+  }
+  return imax;
+}
