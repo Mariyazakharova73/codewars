@@ -1,3 +1,4 @@
+//https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec
 function persistence(num) {
   function um(n) {
     const arr = Array.from(String(n));
@@ -14,6 +15,7 @@ function persistence(num) {
   return i;
 }
 
+//https://www.codewars.com/kata/58235a167a8cb37e1a0000db
 function numberOfPairs(gloves) {
   const countItems = gloves.reduce((item, index) => {
     item[index] = item[index] ? item[index] + 1 : 1;
@@ -29,13 +31,13 @@ function numberOfPairs(gloves) {
   return result;
 }
 
-//Array.diff
+//https://www.codewars.com/kata/523f5d21c841566fde000009
 function arrayDiff(a, b) {
   let dif = a.filter((i) => !b.includes(i));
   return dif;
 }
 
-//Where is my parent!?(cry)
+//https://www.codewars.com/kata/58539230879867a8cd00011c
 function findChildren(dancingBrigade) {
   return dancingBrigade
     .split('')
@@ -43,7 +45,7 @@ function findChildren(dancingBrigade) {
     .join('');
 }
 
-//Consecutive Count
+//https://www.codewars.com/kata/59c3e819d751df54e9000098
 function getConsectiveItems(items, key) {
   let imax = 0;
   let ilenght = 0;
@@ -64,7 +66,7 @@ function getConsectiveItems(items, key) {
   return imax;
 }
 
-// https://www.codewars.com/kata/51e704f2d8dbace389000279/javascript
+//https://www.codewars.com/kata/51e704f2d8dbace389000279/javascript
 function arraysSimilar(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
