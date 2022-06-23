@@ -91,3 +91,24 @@ function arraysSimilar(arr1, arr2) {
     }
   }
 }
+
+//https://www.codewars.com/kata/56a5d994ac971f1ac500003e/train/javascript
+function longestConsec(strarr, k) {
+  if (strarr.length === 0 || k > strarr.length || k <= 0) {
+    return '';
+  } else {
+    let length = 0;
+    let longestStr = '';
+    for (let i = 0; i < strarr.length - k + 1; i++) {
+      let sum = '';
+      for (let j = 0; j < k; j++) {
+        sum += strarr[i + j];
+      }
+      if (sum.length > length) {
+        length = sum.length;
+        longestStr = sum;
+      }
+    }
+    return longestStr;
+  }
+}
