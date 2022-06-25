@@ -112,3 +112,20 @@ function longestConsec(strarr, k) {
     return longestStr;
   }
 }
+
+//https://www.codewars.com/kata/517abf86da9663f1d2000003/train/javascript
+function toCamelCase(str) {
+  if (str === '') {
+    return '';
+  } else {
+    let arr = str.split(/[ _-]/g);
+    let arr2 = arr.map(function (item, index) {
+      if (index === 0) {
+        return item;
+      } else {
+        return (item = item[0].toUpperCase() + item.slice(1));
+      }
+    });
+    return arr2.join('');
+  }
+}
