@@ -139,3 +139,21 @@ function alternate(n, firstValue, secondValue) {
     return arr;
   }
 }
+
+//https://www.codewars.com/kata/5f6d533e1475f30001e47514/train/javascript
+function consecutive(arr, a, b) {
+  let arr2 = [];
+  arr.forEach(function (item, index) {
+    if (item === a && arr[index + 1] === b) {
+      arr2.push(true);
+    } else if (item === a && arr[index - 1] === b) {
+      arr2.push(true);
+    } else {
+      arr2.push(false);
+    }
+  });
+  const result = arr2.some(function (item) {
+    return item === true;
+  });
+  return result;
+}
