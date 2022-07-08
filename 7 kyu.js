@@ -180,5 +180,20 @@ var typeOfTriangle = function (sideA, sideB, sideC) {
 
 //https://www.codewars.com/kata/545a4c5a61aa4c6916000755/train/javascript
 function gimme(a) {
-  return a.indexOf(a.concat().sort(function(a, b) { return a - b })[1])
+  return a.indexOf(
+    a.concat().sort(function (a, b) {
+      return a - b;
+    })[1]
+  );
+}
+
+//https://www.codewars.com/kata/55b42574ff091733d900002f/train/javascript
+function friend(friends) {
+  let arr = [];
+  friends.forEach((item) => {
+    if (item.length === 4) {
+      arr.push(item);
+    }
+  });
+  return arr;
 }
