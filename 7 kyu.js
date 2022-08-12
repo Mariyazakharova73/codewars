@@ -157,6 +157,7 @@ function consecutive(arr, a, b) {
   });
   return result;
 }
+
 //https://www.codewars.com/kata/564d398e2ecf66cec00000a9/train/javascript
 var typeOfTriangle = function (sideA, sideB, sideC) {
   let arr = [sideA, sideB, sideC];

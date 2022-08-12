@@ -129,3 +129,18 @@ function toCamelCase(str) {
     return arr2.join('');
   }
 }
+
+//https://www.codewars.com/kata/59df2f8f08c6cec835000012/train/javascript
+function meeting(s) {
+  let x = s.toUpperCase();
+  let arr = x.split(';');
+  let arr2 = [];
+  arr.map(str => {
+     let x = str.split(':').reverse();
+    arr2.push(`(${x.join(", ")})`)
+    return arr2;
+  });
+  let arr3 = arr2.sort();
+  str= arr3.join('')
+  return str;
+  }
