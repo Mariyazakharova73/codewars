@@ -144,3 +144,9 @@ function meeting(s) {
   str= arr3.join('')
   return str;
   }
+
+  //https://www.codewars.com/kata/578b44a47c77f5a1bd000011/train/javascript
+
+  
+
+  //Find the most frequently occurring elements in arrays
