@@ -1,4 +1,4 @@
-https://www.codewars.com/kata/514a024011ea4fb54200004b
+// https://www.codewars.com/kata/514a024011ea4fb54200004b/train/javascript
 function domainName(str){
   let domain = [];
   let startIndex;
@@ -26,4 +26,19 @@ function domainName(str){
   }
 
   return domain.join('')
+}
+
+// https://www.codewars.com/kata/550f22f4d758534c1100025a/train/javascript
+
+function dirReduc(arr){
+  let str = arr.join(',');
+  for (let i = 0; i < 10; i++) {
+    str = str.replace('NORTH,SOUTH', ',');
+    str = str.replace('SOUTH,NORTH', ',');
+    str = str.replace('WEST,EAST', ',');
+    str = str.replace('EAST,WEST', ',');
+    str = str.replace(',,', ',')
+  }
+
+  return str.split(',').filter((item) => item !== '');
 }
